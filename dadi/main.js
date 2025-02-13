@@ -3,7 +3,6 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. St
 Prima di partire a scrivere codice poniamoci qualche domanda per individuare gli strumenti necessari allo sviluppo.
 */
 
-
 //generate random number for pc and print it
 const pcNumber = Number(Math.floor(Math.random() * 6 + 1));
 console.log("Numero pc: " + pcNumber);

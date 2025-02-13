@@ -12,26 +12,17 @@ const mails = [
   "giuseppeverdi@outlook.it",
   "mariorossi@libero.it"
 ];
+console.log(mails);
 
 //ask to the user his email
 const userMail = prompt("Inserisci la tua mail: [es: giuseppecolucci@libero.it]");
 console.log(userMail);
 
-//create a variable to set if the user is invited or not
-let present = false;
-
-//check if user is invited with a for loop and eventually set the variable to true
-for (let i = 0; i < mails.length; i++) {
-  const thisMail = mails[i];
-
-  if (thisMail === userMail) {
-    present = true;
-  }
-}
-
-//print the message
-if (present === true) {
+//check if the user is invited to the party
+if (mails.includes(userMail)) {
+  //print the positive message
   alert("Ti aspettiamo alla festa!");
 } else {
+  //print the negative message
   alert("Non sei invitato alla festa!");
 }
